@@ -43,7 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="classes\Figure.cs" />
+    <Compile Include="classes\Food.cs" />
     <Compile Include="classes\Point.cs" />
+    <Compile Include="classes\Walls.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="classes\HorizontLine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

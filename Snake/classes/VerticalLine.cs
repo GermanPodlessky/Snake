@@ -16,8 +16,8 @@ namespace Snake
 
             for (int y = yUp; y <= yDown; y++)
             {
-                Point p = new Point(x, y, symbl);
-                pList.Add(p);
+                Console.SetCursorPosition(x, y);
+                Console.Write(symbl);
             }
         }
 

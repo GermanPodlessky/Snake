@@ -19,11 +19,10 @@ namespace Snake
 
             for (int x = xLeft; x <= xRight; x++)
             {
-                Point p = new Point(x,y,symbl);
-                pList.Add(p);
+                Console.SetCursorPosition(x, y);
+                Console.Write(symbl);
             }
+
         }
-
-
     }
 }

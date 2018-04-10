@@ -52,8 +52,19 @@ namespace Snake
 
         public void Draw()
         {
-            Console.SetCursorPosition(x,y);
+            Console.SetCursorPosition(x < 1 ? x = 97 : x > 97 ? x = 1 : x, y < 1 ? y = 28 : y > 28 ? y = 2 : y );
             Console.Write(symbl);
+        }
+
+        public bool EqualityCoordinates(Point point)
+        {
+            return point.x == this.x && point.y == this.y;
+        }
+
+        public void Delete()
+        {
+            symbl = ' ';
+            Draw();
         }
     }
 }
